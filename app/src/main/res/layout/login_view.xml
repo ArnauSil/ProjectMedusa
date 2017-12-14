@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:text="Iniciar Sesión"
+        android:background="@color/colorPrimary"
         android:textSize="20sp"/>
 
     <android.support.design.widget.TextInputLayout
