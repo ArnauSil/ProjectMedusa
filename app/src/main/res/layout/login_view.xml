@@ -12,7 +12,8 @@
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:text="Iniciar Sesión"
-        android:textSize="20sp"/>
+        android:textSize="20sp"
+        android:textStyle="bold"/>
 
     <android.support.design.widget.TextInputLayout
         android:layout_marginTop="15dp"
@@ -40,23 +41,8 @@
 
     </android.support.design.widget.TextInputLayout>
 
-    <TextView
-        android:layout_marginTop="5dp"
-        android:id="@+id/txtLostpassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:autoLink="email"
-        android:gravity="center"
-        android:padding="20dp"
-        android:text="No te has registrado aún? Registrate!"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:textColor="@color/hyperlink"
-        android:clickable="true"
-        android:focusable="true"/>
-
     <CheckBox
-        android:layout_marginTop="0dp"
+        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Mantener sesión iniciada"/>
@@ -71,5 +57,35 @@
         android:textSize="15sp"
         android:background="@color/colorAccent"
         android:textColor="@color/white"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/txt_lost_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:autoLink="email"
+        android:padding="10dp"
+        android:text="Has olvidado la contraseña?"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/hyperlink"
+        android:clickable="true"
+        android:focusable="true"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:layout_marginTop="-10dp"
+        android:id="@+id/txt_not_registered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:autoLink="email"
+        android:padding="10dp"
+        android:text="No te has registrado aún? Registrate!"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/hyperlink"
+        android:clickable="true"
+        android:focusable="true"
+        android:textSize="12sp"/>
 
 </LinearLayout>

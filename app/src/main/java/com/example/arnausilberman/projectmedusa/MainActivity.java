@@ -13,9 +13,12 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.ViewGroup;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -27,14 +30,14 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        /*FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Snackbar.make(view, "Accion a implementar!", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
-        });
+        });*/
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -89,7 +92,8 @@ public class MainActivity extends AppCompatActivity
             final ViewGroup viewGroup = (ViewGroup) findViewById(R.id.drawer_layout);
             viewGroup.addView(View.inflate(this, R.layout.login_view, null));
 
-            final TextView registro = (TextView) findViewById(R.id.txtLostpassword);
+            final TextView registro = (TextView) findViewById(R.id.txt_not_registered);
+            final TextView lostPassword = (TextView) findViewById(R.id.txt_lost_password);
             Button iniciarSesion = (Button) findViewById(R.id.iniciarSesion);
 
             iniciarSesion.setOnClickListener(new View.OnClickListener() {
@@ -103,6 +107,12 @@ public class MainActivity extends AppCompatActivity
                 @Override
                 public void onClick(View view) {
                     registro.setTextColor(getResources().getColor(R.color.colorPrimary));
+                }
+            });
+            lostPassword.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    lostPassword.setTextColor(getResources().getColor(R.color.colorPrimary));
                 }
             });
 

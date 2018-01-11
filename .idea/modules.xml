@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://C:\Users\Arnau Silberman\Desktop\ProjectMedusa\Medusa.iml" filepath="C:\Users\Arnau Silberman\Desktop\ProjectMedusa\Medusa.iml" />
       <module fileurl="file://$PROJECT_DIR$/ProjectMedusa.iml" filepath="$PROJECT_DIR$/ProjectMedusa.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
