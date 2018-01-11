@@ -5,11 +5,25 @@
     android:layout_height="match_parent"
     tools:context=".SplashActivity" >
 
-    <ImageView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:contentDescription="@string/app_name"
-        android:scaleType="fitXY"
-        android:src="@mipmap/ic_launcher" />
+        android:orientation="vertical"
+        android:gravity="center">
 
+        <ImageView
+            android:id="@+id/img_splash"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/ic_launcher" />
+
+        <ProgressBar
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_splash" />
+
+    </LinearLayout>
 </RelativeLayout>

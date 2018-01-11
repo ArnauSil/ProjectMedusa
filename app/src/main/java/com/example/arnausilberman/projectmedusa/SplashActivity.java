@@ -14,7 +14,7 @@ import android.view.Window;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class SplashActivity extends AppCompatActivity {
+public class SplashActivity extends Activity {
     // Set the duration of the splash screen
     private static final long SPLASH_SCREEN_DELAY = 3000;
 
@@ -34,7 +34,8 @@ public class SplashActivity extends AppCompatActivity {
             public void run() {
 
                 // Start the next activity
-                startActivity(new Intent(SplashActivity.this, MainActivity.class));
+                Intent mainIntent = new Intent(SplashActivity.this, MainActivity.class);
+                startActivity(mainIntent);
 
                 // Close the activity so the user won't able to go back this
                 // activity pressing Back button
