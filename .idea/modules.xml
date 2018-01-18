@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Medusa.iml" filepath="$PROJECT_DIR$/Medusa.iml" />
       <module fileurl="file://C:\Users\Arnau Silberman\Desktop\ProjectMedusa\Medusa.iml" filepath="C:\Users\Arnau Silberman\Desktop\ProjectMedusa\Medusa.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ProjectMedusa.iml" filepath="$PROJECT_DIR$/ProjectMedusa.iml" />
+      <module fileurl="file://C:\Users\Arnau Silberman\Documents\Medusa\ProjectMedusa.iml" filepath="C:\Users\Arnau Silberman\Documents\Medusa\ProjectMedusa.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\Arnau Silberman\Documents\Medusa\app\app.iml" filepath="C:\Users\Arnau Silberman\Documents\Medusa\app\app.iml" />
     </modules>
   </component>
 </project>

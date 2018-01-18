@@ -1,5 +1,6 @@
 package com.example.arnausilberman.projectmedusa;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -17,6 +18,8 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.arnausilberman.projectmedusa.database.Connection.MainActivity2;
 
 import org.w3c.dom.Text;
 
@@ -99,7 +102,13 @@ public class MainActivity extends AppCompatActivity
             iniciarSesion.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Toast.makeText(MainActivity.this, "Próximamente...", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "Iniciando sesión...", Toast.LENGTH_SHORT).show();
+                    //viewGroup.removeAllViewsInLayout();
+                    //viewGroup.addView(View.inflate(MainActivity2.this, R.layout.connection_layout, null));
+
+                    Intent mainIntent = new Intent(MainActivity.this, MainActivity2.class);
+                    startActivity(mainIntent);
+
                 }
             });
 
